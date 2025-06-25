@@ -40,7 +40,7 @@
   - Baseline: Random Forest, XGBClassifier, Soft Voting  
   - 평가지표: Precision, Recall, F1-score (Macro, Weighted)  
 - **하이퍼파라미터 튜닝 (Random Forest)**  
-  ```json
+  ```python
   {
     "n_estimators": 200,
     "max_depth": 7,
@@ -48,8 +48,17 @@
     "subsample": 0.8,
     "colsample_bytree": 1.0
   }
+  ```
+- **모델링 결과**
+  | Class           | Precision | Recall | F1-score | Support |
+|-----------------|-----------|--------|----------|---------|
+| **0.0**         | 0.74      | 0.62   | 0.67     | 840     |
+| **1.0**         | 0.47      | 0.61   | 0.53     | 468     |
+| **Accuracy**    | ‒         | ‒      | 0.61     | 1308    |
+| **Macro avg**   | 0.60      | 0.61   | 0.60     | 1308    |
+| **Weighted avg**| 0.64      | 0.61   | 0.62     | 1308    |
 
-- 랜덤포레스트 선택 이유
+- 랜덤포레스트 선정 이유
     - 3일 무료체험 프로모션 (이미 진행 중)
     - 데이터셋 (3일 무료체험 신청 이전의 행동 알 수 없음)
     - 이미 진행 중인 프로모션 + 이전 행동 알 수 없음
