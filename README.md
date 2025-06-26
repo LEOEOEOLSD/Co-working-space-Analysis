@@ -8,13 +8,12 @@
 
 ---
 
-## 2. 데이터 & 전처리
-- **주요 데이터셋**
-  - `site_area`: 지점별 면적
-  - `trial_payment`: 3일 체험 신청자 결제 여부
-  - `trial_register`: 3일 체험 신청 정보  
-  - `trial_visit_info`: 일자별 방문 기록  
-  - `trial_access_log`: 출입 로그 (입실/퇴실 시각, 체류시간)
+## 2. 데이터셋 설명
+- `site_area`: 지점별 면적
+- `trial_payment`: 3일 체험 신청자 결제 여부
+- `trial_register`: 3일 체험 신청 정보  
+- `trial_visit_info`: 일자별 방문 기록  
+- `trial_access_log`: 출입 로그 (입실/퇴실 시각, 체류시간)
 
 ## 3. EDA 주요 결과
 - **평일 중심 방문**  
